@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Game Portfolio — Unity Mobile Games</title>
-<meta name="description" content="Unity mobile games shipped on Google Play: HoleX, Hungry Hole, Pirate Cannon Blast, Cryptogram, AFK Fortress, Kitty Painter and Nova Siege.">
+<meta name="description" content="Unity mobile games shipped on Google Play: Obby Escape, HoleX, Hungry Hole, Pirate Cannon Blast, Cryptogram, AFK Fortress, Kitty Painter and Nova Siege.">
 <style>
   :root { --bg:#0d0f17; --card:#161a26; --line:#262b3b; --text:#e8eaf2; --muted:#9aa0b4; --accent:#7c5cff; }
   * { box-sizing:border-box; }
@@ -47,9 +47,8 @@
     <h1>Unity Game Developer</h1>
     <p>Mobile games built in Unity and shipped on Google Play — hyper-casual, puzzle, physics and tower defense.</p>
     <div class="stats">
-      <div><b>7</b><span>Games</span></div>
-      <div><b>6</b><span>Live on Google Play</span></div>
-      <div><b>120K+</b><span>Total downloads</span></div>
+      <div><b>7</b><span>Live on Google Play</span></div>
+      <div><b>1.1M+</b><span>Total downloads</span></div>
     </div>
     <p style="margin:32px 0 0"><a class="btn" href="mailto:fasihzawar7@gmail.com">✉ Contact me</a></p>
   </div>
@@ -64,6 +63,8 @@
 const play = id => `https://play.google.com/store/apps/details?id=${id}`;
 // ponytail: game list lives here; add a game = add one object + an img/<slug>/ folder
 const games = [
+  { slug:"obby-escape", name:"Obby Escape: Story Games", pkg:"com.prison.escape.obby.parkour.game3d", shots:5, dl:"1M+", genre:"Obby Parkour",
+    desc:"Escape Prison, School, Carnival & more in fun Obby Parkour story adventures." },
   { slug:"holex", name:"HoleX", pkg:"com.qas.gi.holex.game", shots:4, dl:"100K+", genre:"Puzzle",
     desc:"Control the black hole, eat everything, and clear every level fast." },
   { slug:"hungry-hole", name:"Hungry Hole: Eat All", pkg:"com.gi.hungry.hole.eat.all.game", shots:5, dl:"10K+", genre:"Puzzle",
