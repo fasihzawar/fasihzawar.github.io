@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Game Portfolio — Unity Mobile Games</title>
-<meta name="description" content="Unity mobile games shipped on Google Play: Obby Escape, HoleX, Hungry Hole, Pirate Cannon Blast, Cryptogram, AFK Fortress, Kitty Painter and Nova Siege.">
+<meta name="description" content="Unity mobile games shipped on Google Play: Nova Siege, Rotate Loops, Obby Escape, HoleX, Hungry Hole, Pirate Cannon Blast, Cryptogram, AFK Fortress, Kitty Painter and Nova Siege.">
 <style>
   :root { --bg:#0d0f17; --card:#161a26; --line:#262b3b; --text:#e8eaf2; --muted:#9aa0b4; --accent:#7c5cff; }
   * { box-sizing:border-box; }
@@ -47,7 +47,7 @@
     <h1>Unity Game Developer</h1>
     <p>Mobile games built in Unity and shipped on Google Play — obby parkour, hyper-casual, puzzle, physics and tower defense.</p>
     <div class="stats">
-      <div><b>7</b><span>Live on Google Play</span></div>
+      <div><b>8</b><span>Live on Google Play</span></div>
       <div><b>1.1M+</b><span>Total downloads</span></div>
     </div>
     <p style="margin:32px 0 0"><a class="btn" href="mailto:fasihzawar7@gmail.com">✉ Contact me</a></p>
@@ -63,6 +63,10 @@
 const play = id => `https://play.google.com/store/apps/details?id=${id}`;
 // ponytail: game list lives here; add a game = add one object + an img/<slug>/ folder
 const games = [
+  { slug:"nova-siege", name:"Nova Siege", shots:11, genre:"Tower Defense", video:"nova-siege.mp4",
+    desc:"A mobile tower defense game where everything is a card — 72 towers, rarities and grades, hundreds of units and homing projectiles, running at 60 FPS on mobile." },
+  { slug:"rotate-loops", name:"Rotate Loops", pkg:"com.qas.gf.rotate.loops.game", shots:8, dl:"5K+", genre:"Puzzle",
+    desc:"Rotate rings, align gaps, untangle loops and solve relaxing puzzles." },
   { slug:"obby-escape", name:"Obby Escape: Story Games", pkg:"com.prison.escape.obby.parkour.game3d", shots:5, dl:"1M+", genre:"Obby Parkour",
     desc:"Escape Prison, School, Carnival & more in fun Obby Parkour story adventures." },
   { slug:"holex", name:"HoleX", pkg:"com.qas.gi.holex.game", shots:4, dl:"100K+", genre:"Puzzle",
@@ -71,8 +75,6 @@ const games = [
     desc:"Control a hungry hole, eat everything, grow bigger, and complete fun levels." },
   { slug:"pirate-cannon", name:"Pirate Cannon Blast", pkg:"com.qas.gf.pirate.cannon.blast.game", shots:5, dl:"10K+", genre:"Physics",
     desc:"Aim, fire, and blast pirate forts in an exciting physics destruction adventure." },
-  { slug:"nova-siege", name:"Nova Siege", shots:11, genre:"Tower Defense", video:"nova-siege.mp4",
-    desc:"A mobile tower defense game where everything is a card — 72 towers, rarities and grades, hundreds of units and homing projectiles, running at 60 FPS on mobile." },
   { slug:"afk-fortress", name:"AFK Fortress", pkg:"com.castellancode.AFKFortress", shots:9, dl:"1K+", genre:"Idle Tower Defense",
     desc:"Evolve your army from Ice Age to Alien Age in this idle tower defense." },
   { slug:"cryptogram", name:"Cryptogram: Word Logic Game", pkg:"com.dzu.cryptogram.word.logic.game", shots:6, dl:"1K+", genre:"Word Puzzle",
